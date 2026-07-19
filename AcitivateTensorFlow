@@ -1,6 +1,0 @@
-module load conda
-source "$(conda info --base)/etc/profile.d/conda.sh"
-conda activate scaaml312
-
-python -m pip install --upgrade "tensorflow[and-cuda]"
-python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
